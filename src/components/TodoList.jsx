@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
+import { RxCross2 } from "react-icons/rx";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -125,7 +126,7 @@ const TodoList = () => {
               onClick={() => deleteTodo(index)}
               className="bg-red-500 text-white px-2 py-1 rounded"
             >
-              Delete
+              <RxCross2 /> 
             </button>
           </li>
         ))}
